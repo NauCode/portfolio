@@ -1,0 +1,117 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #4f46e5;
+  --ifm-color-primary-dark: #4338ca;
+  --ifm-color-primary-darker: #3730a3;
+  --ifm-color-primary-darkest: #312e81;
+  --ifm-color-primary-light: #6366f1;
+  --ifm-color-primary-lighter: #7c84f5;
+  --ifm-color-primary-lightest: #9aa3f9;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --nj-blue: #2563eb;
+  --nj-green: #10b981;
+  --nj-violet: #7c3aed;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #8b8cfb;
+  --ifm-color-primary-dark: #7a7bf6;
+  --ifm-color-primary-darker: #6b6cf0;
+  --ifm-color-primary-darkest: #5b5de6;
+  --ifm-color-primary-light: #9b9cfe;
+  --ifm-color-primary-lighter: #aeb0ff;
+  --ifm-color-primary-lightest: #c7c9ff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --nj-blue: #60a5fa;
+  --nj-green: #34d399;
+  --nj-violet: #a78bfa;
+}
+
+.button {
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.18);
+}
+
+.button--primary {
+  background: linear-gradient(120deg, rgba(124, 58, 237, 0.65), rgba(99, 102, 241, 0.7));
+  border: 1px solid rgba(124, 58, 237, 0.35);
+  color: #fff;
+}
+
+.button--primary:hover {
+  background: linear-gradient(120deg, rgba(124, 58, 237, 0.8), rgba(99, 102, 241, 0.85));
+  color: #fff;
+}
+
+.button--secondary,
+.button--outline {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  color: #fff;
+}
+
+.button--secondary:hover,
+.button--outline:hover {
+  background: rgba(255, 255, 255, 0.28);
+  color: #fff;
+}
+
+.navbar__iconLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  color: var(--ifm-color-primary);
+  margin-left: 0.4rem;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.navbar__iconLink img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  filter: none;
+}
+
+.navbar__iconLink:hover {
+  background: rgba(99, 102, 241, 0.12);
+  transform: translateY(-1px);
+}
+
+[data-theme='dark'] .navbar__iconLink img {
+  filter: brightness(0) saturate(100%);
+}
+
+/* Theme toggle button */
+.navbar__items .toggleButton,
+.navbar__items .clean-btn,
+.navbar__items .navbar__toggle {
+  box-shadow: none;
+  backdrop-filter: none;
+  border-radius: 999px;
+}
+
+[data-theme='dark'] .navbar__items .toggleButton,
+[data-theme='dark'] .navbar__items .clean-btn,
+[data-theme='dark'] .navbar__items .navbar__toggle {
+  background: transparent;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .button {
+    backdrop-filter: none;
+  }
+}

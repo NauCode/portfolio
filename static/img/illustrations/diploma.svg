@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Illustration diploma">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="48" fill="url(#bg)"/>
+  <rect x="220" y="200" width="760" height="400" rx="28" fill="#ffffff" stroke="#c7d2fe" stroke-width="6"/>
+  <rect x="280" y="260" width="640" height="36" rx="18" fill="#a78bfa"/>
+  <rect x="280" y="320" width="420" height="24" rx="12" fill="#60a5fa"/>
+  <rect x="280" y="360" width="520" height="24" rx="12" fill="#34d399"/>
+  <rect x="280" y="400" width="360" height="24" rx="12" fill="#60a5fa"/>
+  <circle cx="880" cy="520" r="52" fill="#a78bfa"/>
+  <path d="M880 480 L905 520 L880 560 L855 520 Z" fill="#ffffff"/>
+  <rect x="520" y="620" width="160" height="24" rx="12" fill="#c7d2fe"/>
+</svg>
